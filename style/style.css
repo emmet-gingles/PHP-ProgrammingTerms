@@ -1,0 +1,104 @@
+.form {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.form-content {
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    width: 500px;
+    height: 150px;
+    background-color: white;
+    padding: 20px;
+}
+
+.close {
+    color: grey;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: black;
+    cursor: pointer;
+}
+
+input[type=text], textarea {
+    position: absolute;
+    left: 100px;
+}
+
+textarea {
+    resize: none;
+}
+
+button.update, button.create {
+    background-color: lawngreen;
+}
+
+button.delete {
+    background-color: red;
+}
+
+button.search {
+    background-color: skyblue;
+}
+
+button:disabled {
+    background-color: lightgray;
+}
+
+.content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#btn-updateTopic, #btn-addTopic {
+    position: relative;
+    top: 70px;
+}
+
+#btn-addTag {
+    position: relative;
+    left: 200px;
+}
+
+#btn-selectTags {
+    position: relative;
+    left: 150px;
+}
+
+.tag{
+    background-color: lightskyblue;
+}
+
+.removeTag {
+    background-color: lightskyblue;
+    color: grey;
+    font-weight: bold;
+}
+
+.removeTag:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.suggestions {
+    position: absolute;
+    left: 50px;
+    background-color: white;
+}
+.suggestions > li {
+    cursor: pointer;
+}
